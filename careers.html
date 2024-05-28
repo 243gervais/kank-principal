@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Careers</title>
+       <!--- <link rel="stylesheet" href="style.css">-->   
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            /*------------- Header ----------------- */
+
+            .header{
+                min-height: 0vh;
+                width: 100%;
+                background-position: center;
+                background-size: cover;
+            }
+            #below-logo{
+                text-decoration: none;
+                color: white;
+                font-size: 15px;
+                display: inline-block;
+                font-style: bold;
+                position: absolute;
+                bottom:88%;
+                padding-left: 10px;
+
+            }
+            nav{
+                display: flex;
+                padding: 2% 6%;
+                justify-content: space-between;
+                align-items: center;
+                background-color: black;
+            }
+            nav img{
+                width: 80px;
+                border-radius: 50%;
+            }
+            .nav-links{
+                flex: 1;
+                text-align: right;
+            }
+            .nav-links ul li{
+                list-style: none;
+                display: inline-block;
+                padding: 8px 12px;
+                position: relative;
+            }
+            .nav-links ul li a{
+                color:#fff;
+                text-decoration: none;
+                font-size: 15px;
+            }
+            .nav-links ul li a ::after{
+                content: '';
+                height:2px;
+                background: #f44336;
+                display: block;
+                margin: auto;
+                transition: width 0.5s ease;
+            }
+            .nav-links ul li a :hover::after{
+                width: 100%;
+            }
+
+            .text-box{
+                background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/backgroundKank.webp);
+
+                 min-height: 80vh;
+
+
+            }
+            .text-box p{
+                color: white;
+                font-size: 40px;
+                text-align: center left;
+                margin: 10px 0 40px;
+                width: 90%;
+                position: absolute;
+                top:75%;
+                left:50%;
+                transform: translate(-50%,-50%);
+            }
+            
+            /*------------------ mission ----------------*/
+
+            .mission {
+                text-align: center; /* Center the content horizontally */
+                padding: 50px 0; /* Add some top and bottom padding for spacing */
+                background-color: #f8f8f8; /* Light gray background for contrast */
+                border-radius: 10px; /* Rounded corners for a softer look */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+                margin-bottom: 50px; /* Add some bottom margin for separation */
+            }
+            h1{
+                text-align: center;
+                font-size: 30px;
+                padding: 0.5em;
+                background: linear-gradient(to right, #fff, #f9b933);
+                margin-bottom: 30px;
+                 
+            }
+
+            .mission h2 {
+                font-size: 32px;
+                font-weight: 600;
+                color: #333; /* Darker text color for better readability */
+                margin-bottom: 20px;
+            }
+
+            .mission p {
+                font-size: 16px;
+                line-height: 1.5; /* Adjust line height for better readability */
+                color: #666; /* Slightly lighter text color */
+                margin-bottom: 20px;
+            }
+
+            .mission .word {
+                width: 80%; /* Limit the width of the text block for better readability */
+                margin: 0 auto; /* Center the text block horizontally */
+            }
+
+
+            /*------------------- table --------------------- */
+        
+            table{
+                width: 100%;
+                border: 2px solid black;
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+            .table-head{
+                background-color: black;
+                color: white;
+            }
+            td, th{
+                border: 1px solid black;
+                padding: 0.4em;
+                font-size: 1.5em;
+                text-align: center;
+            }
+
+
+            /*------------- footer -------------*/
+            footer{
+                min-height: 10vh;
+                background-color: black;
+            }
+            footer p{
+                margin: 0.4em;
+                font-size: 14px;
+                color: white;
+                text-align: center;
+                padding: 35px;
+            }
+            .accent{
+                font-weight: bold;
+            }
+            .footer-link {
+                color: white; 
+                text-decoration: none; /* Remove underline */
+                font-weight: bold; /* Add emphasis */
+            }
+
+            /* Optional: Add hover effect */
+            .footer-link:hover {
+                color: yellow; /* Change to your desired hover color */
+            }
+
+            .manager-link {
+                color: #333; /* Set a dark gray color for the text */
+                text-decoration: none; /* Remove underline decoration */
+                padding: 5px 10px; /* Add some padding for spacing */
+                border: 1px solid #ccc; /* Add a thin border */
+                border-radius: 3px; /* Add rounded corners for a softer look */
+                transition: all 0.2s ease-in-out; /* Smooth hover effect */
+            }
+
+            .manager-link:hover {
+                background-color: #f2f2f2; /* Slight background change on hover */
+                color: #000; /* Text color darkens on hover */
+            }
+
+
+
+
+            
+
+        </style>
+
+
+
+    </head>
+    <body>
+    
+        <!---------------------------- Header --------------------------------->
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/gervais.png" alt="logoKank"><p id="below-logo">Fondation Gervais</p></a>
+            
+            <div class="nav-links">
+                <ul>
+                    <li><a href="">A Propos</a></li>
+                    <li><a href="careers.html">Carrières</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="formation.html">Formations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            </nav>
+            <div class="text-box">
+                <p><strong>Êtes-vous intéressé à travailler à FONGE?</strong></p>
+            </div>
+        
+        </section>
+
+
+
+        <!-------------------------- Mission --------------------->
+
+        <section class="mission">
+            <p style="font-size: 17px; margin: 20px; text-align: center;"> Carrières</p>
+            <h2> Rejoignez une équipe motivée par une mission </h2>
+            <div class="word">
+                <p>Travailler chez FONGE est une opportunité d’avoir un impact positif sur
+                     la vie des plus vulnérables grâce<br>à des solutions durables
+                     et basées sur le marché pour lutter contre la pauvreté. Chez FONGE,
+                      vous rejoindrez une équipe axée sur une mission qui croit<br> 
+                     qu'un coup de main, et non un cadeau, 
+                    est le meilleur moyen de créer un changement économique durable 
+                    dans les communautés mal desservies du monde.
+
+                </p>
+                <p>
+                    FONGE recrute pour des postes à son siège social à Kinshasa,(RDC) et pour des postes internationaux. 
+                    Notre réseau international de filiales présentes sur les cinq continents offre une multitude d'options 
+                    de carrière couvrant un large éventail de disciplines, avec des opportunités infinies d'apprendre et de grandir.
+
+                </p>
+                
+            </div>
+        </section>
+        
+
+
+        <!---------------------------  Table  ------------------------->
+         <section class="table">
+            <h1> Nos Positions</h1>
+            <table>
+                <thead>
+                    <tr class="table-head">
+                        <th>Role</th>
+                        <th>Location</th>
+                        <th>Date du Début</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="application.html" class="manager-link">Manager</a></td>
+                        <td>Matadi-Kibala/ Kinshasa</td>
+                        <td>September/2024</td>
+                    </tr>
+                    <tr>
+                        <td><a href="application.html" class="manager-link">Manager</a></td>
+                        <td>Mitendi/Kinshasa</td>
+                        <td>September/2024</td>
+                    </tr>
+                    <tr>
+                        <td><a href="application.html" class="manager-link">Manager</a></td>
+                        <td>Pumbu</td>
+                        <td>September/2024</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </section>
+
+
+    
+
+        <!----------------------------- Footer ------------------------------------->
+        <footer>
+            <p>©2024<span class="accent"> <a href="careers.html" class="footer-link"> Fondation Gervais </a></span>| 41 Kimayala Q. Boma C/ Mont-Ngafula Kinshasa, DRC</p>
+       </footer>
+
+
+    </body>
+</html>
