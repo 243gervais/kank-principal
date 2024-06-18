@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/def79fed80.js" crossorigin="anonymous"></script>
+
+
+    <style>
+        /* ----------- Reset styles ------------*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "popins", sans-serif;
+        }
+        
+
+        /*-------------- Header -----------------*/
+
+        .header{
+                min-height: 50px;
+                width: 100%;
+                background-position: center;
+                background-size: cover;
+        }
+        #below-logo{
+                text-decoration: none;
+                color: white;
+                font-size: 15px;
+                display: inline-block;
+                font-style: bold;
+                position: absolute;
+                bottom:88%;
+                padding-left: 10px;
+
+        }
+            nav{
+                display: flex;
+                padding: 2% 6%;
+                justify-content: space-between;
+                align-items: center;
+                background-color: black;
+            }
+            nav img{
+                width: 80px;
+                border-radius: 50%;
+            }
+            .nav-links{
+                flex: 1;
+                text-align: right;
+            }
+            .nav-links ul li{
+                list-style: none;
+                display: inline-block;
+                padding: 8px 12px;
+                position: relative;
+            }
+            .nav-links ul li a{
+                color:#fff;
+                text-decoration: none;
+                font-size: 15px;
+            }
+            .nav-links ul li a ::after{
+                content: '';
+                height:2px;
+                background: #f44336;
+                display: block;
+                margin: auto;
+                transition: width 0.5s ease;
+            }
+            .nav-links ul li a :hover::after{
+                width: 100%;
+            }
+            /* Hamburger menu styles */
+            .nav-toggle {
+                display: none;
+            }
+            .nav-toggle-label {
+                display: none;
+                cursor: pointer;
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                width: 30px;
+                height: 30px;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+
+            .nav-toggle-label span {
+                display: block;
+                background: #fff;
+                height: 3px;
+                width: 100%;
+                border-radius: 2px;
+                transition: all 0.3s;
+            }
+
+            /* Show the hamburger menu on small screens */
+            @media (max-width: 768px) {
+                .nav-links {
+                    display: none;
+                    width: 100%;
+                    text-align: center;
+                }
+
+                .nav-links ul {
+                    flex-direction: column;
+                }
+
+                .nav-links ul li {
+                    display: block;
+                    padding: 10px 0;
+                }
+
+                .nav-toggle-label {
+                    display: flex;
+                }
+
+                .nav-toggle:checked + .nav-toggle-label + .nav-links {
+                    display: block;
+                }
+                nav {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+
+                .logo {
+                    margin-bottom: 10px;
+                }
+
+                .nav-toggle-label {
+                    position: static;
+                    align-self: flex-end;
+                }
+                
+            }
+        
+
+        /*-------------------- Services -------------------*/
+        .container{
+            width: 100%;
+            height: 100vh;
+            padding: 0 8%;
+        }
+        .container h1{
+            text-align: center;
+            padding-top: 10%;
+            margin-bottom: 60px;
+            font-weight: 600;
+            position: relative;
+        }
+        .container h1 ::after{
+            content: '';
+            background:#419197;
+            width: 100px;
+            height: 5px;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .roww{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 30px;
+        }
+        .service{
+            text-align: center;
+            padding: 25px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            background: transparent;
+            transition: transform 0.5s, background 0.5s;
+        }
+        .service i{
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: #419197;
+        }
+        .service h2{
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .service:hover{
+            background: black;
+            color: #fff;
+            transform: scale(1.5);
+        }
+
+
+        
+
+    </style>
+
+
+
+
+</head>
+<body>
+    <!------------  Header -------------------->
+
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/gervais.png" alt="logoKank"><p id="below-logo">Fondation Gervais</p></a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="/src/about.html" class="text-white hover:text-rose-600">A Propos</a></li>
+                    <li><a href="careers.html" class="text-white hover:text-rose-600">Carrières</a></li>
+                    <li><a href="service.html" class="text-white hover:text-rose-600">Services</a></li>
+                    <li><a href="contact.html" class="text-white hover:text-rose-600">Contact</a></li>
+                </ul>
+            </div>
+        </nav>  
+   
+    </section>
+    
+
+        <!------------------------ Services --------------------->
+        <div class="container">
+            <h1>Nos Services</h1>
+            <p style="text-align: center; font-size: 16px;line-height: 1.5;color: #666; margin-bottom: 60px;">
+                Travailler chez FONGE est une opportunité d’avoir un impact positif sur
+                     la vie des<br> plus vulnérables grâce à des solutions durables
+                     et basées sur le marché pour lutter contre la pauvreté. Chez FONGE,
+                      vous rejoindrez une équipe axée sur une mission<br> qui croit 
+                     qu'un coup de main, et non un cadeau, 
+                    est le meilleur moyen de créer un changement économique durable 
+                    dans les communautés mal desservies du monde.
+            </p>
+            <div class="roww">
+                <div class="service">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-chart-line"></i>
+                    <h2>Marketing</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-palette"></i>
+                    <h2>Graphics</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-chart-pie"></i>
+                    <h2>Data Analysis</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h2>App Development</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-calculator"></i>
+                    <h2>Accounting</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-money-bill-alt"></i>
+                    <h2>Payroll</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-network-wired"></i>
+                    <h2>Networking</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                </div>
+            </div>
+        </div>
+
+         
+</body>
+</html>

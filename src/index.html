@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fondation Gervais</title>
+        <link rel="stylesheet" href="style.css">   
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="./output.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/def79fed80.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <!---------------------------- Header" --------------------------------->
+        <section class="header  ">
+            <nav>
+                <a href="index.html" >
+                    <img src="images/gervais.png" alt="logoKank" >
+                    <p id="below-logo">Fondation Gervais</p>
+                </a>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            <div class="nav-links ">
+                <ul>
+                    <li><a href="#" class="text-white hover:text-rose-600">A Propos</a></li>
+                    <li><a href="career.html" class="text-white hover:text-rose-600">Carrières</a></li>
+                    <li><a href="service.html" class="text-white hover:text-rose-600">Services</a></li>
+                    <li><a href="contact.html" class="text-white hover:text-rose-600">Contacts</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i> 
+            </nav>
+            <div class="text-box ">
+              
+                <p class="text-sm font-bold">Aider les petites entreprises à se developper</p>
+               
+                <script>
+                    const paragraph = document.querySelector('.text-sm ');
+                    const text = paragraph.textContent;
+                    let index = 0;
+                    
+                    function typeWriter() {
+                      paragraph.textContent = text.substring(0, index);
+                      index++;
+                    
+                      if (index > text.length) {
+                        clearInterval(interval);
+                        index = 0;
+                        
+                      }
+                    }
+                    // Call typeWriter function initially to start the animation
+                    typeWriter();
+                    
+                    const interval = setInterval(typeWriter, 110); // Adjust speed as needed (ms)
+                </script>
+                
+            </div>
+
+        </section>
+
+
+
+
+
+       <!----------------------------- Block ----------------------------------------->
+        <section class="block ">
+            <p class=" text-4xl font-bold kicker ">Notre Travail</p> 
+            <h2 class=" title  font-semibold mb-8">La Fondation Gervais (FONGE) est pionnier en matière de solutions durable.</h2>
+            <div class=" block0 ">
+                <p class="text-gray-700">FONGE a pour mission d'aider les petits vendeurs locaux à obtenir des crédits pour gérer leur entreprises afin
+                d'augmenter leur production et de développer leur activité. </p>
+                
+            </div>
+            <div class=" block1 ">
+                <div class="block-item ">
+                <img  src="https://finca.org/wp-content/uploads/family-silhouette.svg" alt="People Icon" >
+                <p class="text-xl font-bold text-gray-700 mb-2 sm:pr-6">6,075,000+ <br><span>Lives directly impacted</span></p>
+                </div>
+                <div class="block-item ">
+                <img src="https://finca.org/wp-content/uploads/donut-chart.svg" alt="Graph Icon"  >
+                <p class="text-xl font-bold text-gray-700 mb-2 ">14 of 17<br> <span>SDGs contributed to</span></p>
+                </div>
+                <div class="block-item">
+                <img src="https://finca.org/wp-content/uploads/world.svg" alt="Globe Icon" >
+                <p class="text-xl font-bold text-gray-700 mb-2">40+ <br><span>Countries</span></p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <!------------------------- Work Areas -------------------------->
+        <section class="work-areas">
+          <h1 class="font-bold text-4xl kicker"> Nos Zones de Travail</h1>
+          <p id="p-workAreas">Des relations personnelles profondes nous donnent un aperçu unique des besoins réels des gens.</p>
+
+          <div class="row">
+              <div class="work-areas-col">
+                  <img src="images/young-education.png">
+                  <h3 id="work-areas-h3" class="font-bold">Education</h3>
+                  <p>Nos enfants termineront leurs études secondaires et apprendront un métier ou une profession à forte valeur ajoutée. 
+                    Nous avons accès à une éducation qui nous aidera à améliorer la vie de notre famille.
+                </p>
+              </div>
+              <div class="work-areas-col">
+                  <img src="images/market.png">
+                  <h3 id="work-areas-h3" class="font-bold">Le marché</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. 
+                      Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet porttitor 
+                      venenatis.</p>
+              </div>
+              <div class="work-areas-col">
+                  <img src="images/water.png">
+                  <h3 id="work-areas-h3" class="font-bold">L'eau et Assainissement</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. 
+                      Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet porttitor 
+                      venenatis.</p>
+             </div>
+          </div>
+        </section>
+
+
+
+
+
+
+       
+        <!------------------------ Services --------------------->
+        <div class="container mx-auto py-12 px-4">
+            <h1 class="font-bold text-4xl kicker mb-8">Nos Services</h1>
+            <p class="text-center text-gray-700 mb-8">AVEC PLUS DE 6 ANS D'EXPÉRIENCE...</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="service bg-white rounded shadow hover:shadow-md p-4 text-center cursor-pointer transition duration-300">
+                    <i class="fas fa-money-bill-alt text-4xl text-primary mb-4"></i>
+                    <h2>Finance</h2>
+                    <p>Depuis 2018</p>
+                </div>
+                <div class="service bg-white rounded shadow hover:shadow-md p-4 text-center cursor-pointer transition duration-300">
+                    <i class="fas fa-chart-line text-4xl text-primary mb-4"></i>
+                    <h2>Marketing</h2>
+                    <p>Depuis 2018</p>
+                </div>
+                <div class="service bg-white rounded shadow hover:shadow-md p-4 text-center cursor-pointer transition duration-300">
+                    <i class="fas fa-medkit text-4xl text-primary mb-4"></i>
+                    <h2>Santé</h2>
+                    <p>Depuis 2018</p>
+                </div>
+                <div class="service bg-white rounded shadow hover:shadow-md p-4 text-center cursor-pointer transition duration-300">
+                    <i class="fas fa-graduation-cap text-4xl text-primary mb-4"></i>
+                    <h2>Education</h2>
+                    <p>Depuis 2018</p>
+                </div>
+                <div class="service bg-white rounded shadow hover:shadow-md p-4 text-center cursor-pointer transition duration-300">
+                    <i class="fas fa-tractor text-4xl text-primary mb-4"></i>
+                    <h2>Agriculture</h2>
+                    <p>Depuis 2018</p>
+                </div>
+                <div class="service bg-white rounded shadow hover:shadow-md p-4 text-center cursor-pointer transition duration-300">
+                    <i class="fas fa-solar-panel text-4xl text-primary mb-4"></i>
+                    <h2>Energie</h2>
+                    <p>Depuis 2018</p>
+                </div>
+                <div class="service bg-white rounded shadow hover:shadow-md p-4 text-center cursor-pointer transition duration-300">
+                    <i class="fas fa-hand-holding-water text-4xl text-primary mb-4"></i>
+                    <h2>L'Assainissement</h2>
+                    <p>Depuis 2018</p>
+                </div>
+                <div class="service bg-white rounded shadow hover:shadow-md p-4 text-center cursor-pointer transition duration-300">
+                    <i class="fas fa-users text-4xl text-primary mb-4"></i>
+                    <h2>Le Social</h2>
+                    <p>Depuis 2018</p>
+                </div>
+                <div class="service bg-white rounded shadow hover:shadow-md p-4 text-center cursor-pointer transition duration-300">
+                    <i class="fas fa-hand-holding-usd text-4xl text-primary mb-4"></i>
+                    <h2>Donations</h2>
+                    <p>Depuis 2018</p>
+                </div>
+               
+                
+         
+            </div>
+        </div>
+
+
+
+
+
+        <!----------- Call To Action --------------->
+        <section class="cta">
+            <h1>Leadership Eclairé </h1>
+            <p style=" color:#fff; padding-bottom: 20px;">En tant qu'organisation axée sur les données,<br> 
+                nous mesurons constamment nos progrès, travaillons avec des partenaires et partageons nos idées via des forums.</p>
+            <a href="" class="hero-btn">Se renseigner</a>
+        
+           </section>
+
+
+
+        
+        <!-----------------------   links  ------------------------------>
+        <section class="foot space-x-8">
+            <div class="foot-col-1">
+                <h3>Liens Rapides</h3>
+                <a href="">A Propos</a>
+                <a href="">Carrières</a>
+                <a href="">Services</a>
+                <a href="contact.html">Contacts</a>
+                
+            </div>
+            <div class="foot-col-2">
+                <h3>BULLETIN</h3>
+                <form>
+                  <input type="email" placeholder="Your Email Address" required>
+                  <button type="submit">SUBSCRIBE</button>
+                </form>
+
+            </div>
+            <div class="foot-col-3">
+                <h3>CONTACT</h3>
+                <p>41 Kimayala Q. Boma C/ Mont-Ngafula Kinshasa, DRC</p>
+                <div class="social-icons">
+                  <i class="fab fa-facebook text-white hover:text-blue-600"></i>
+                  <i class="fab fa-twitter text-white hover:text-cyan-600"></i>
+                  <i class="fab fa-instagram text-white hover:text-rose-400"></i>
+                  <i class="fab fa-youtube text-white hover:text-red-600"></i>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!------------------------------ Footer ------------------------------------->
+         <footer >
+             <p>©2024<span class="accent"> Fondation Gervais </span>| Taxpayer ID Number: 13-3240109 | legal disclaimer</p>
+        </footer>
+        <!---- Removing the footer section on smaller screens ------>
+
+        <script>
+            const ctaSection = document.querySelector('.cta');
+            const linksSection = document.querySelector('.foot');
+            const footerSection = document.querySelector('footer');
+            
+            function handleResize() {
+              const screenWidth = window.innerWidth;
+              if (screenWidth >= 1200){
+                //linksSection.style.display = 'none';
+              }
+              if (screenWidth <= 767) { // Adjust breakpoint as needed
+                ctaSection.style.display = 'none';
+                linksSection.style.display = 'none';
+                footerSection.style.display = 'none';
+              } else {
+                //ctaSection.style.display = 'block';
+                //linksSection.style.display = 'block';
+                //footerSection.style.display = 'block';
+              }
+            }
+           
+            window.addEventListener('resize', handleResize);
+            
+            // Call the function initially to handle initial page load
+            handleResize();
+        </script>
+
+        <!---- showing the footer section at the bottom of the page for small screens -->
+
+        <script>
+            window.onload = function() {
+            const footer = document.getElementById("footer");
+            const body = document.body;
+            const html = document.documentElement;
+        
+            const height = Math.max(body.scrollHeight, html.scrollHeight, body.offsetHeight, html.offsetHeight);
+            footer.style.position = "absolute";
+            footer.style.bottom = "0";
+            footer.style.width = "100%";
+            };
+        </script>
+        
+    </body>
+</html>

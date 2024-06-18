@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fondation Gervais</title> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/def79fed80.js" crossorigin="anonymous"></script>
+        
+
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            .header{
+                min-height: 100vh;
+                width: 100%;
+                background-position: center;
+                background-size: cover;
+                
+            }
+            #below-logo{
+                text-decoration: none;
+                color: white;
+                font-size: 15px;
+                display: inline-block;
+                font-style: bold;
+                position: absolute;
+                bottom:88%;
+                padding-left: 10px;
+
+            }
+            nav{
+                display: flex;
+                padding: 2% 6%;
+                justify-content: space-between;
+                align-items: center;
+                background-color: black;
+                
+            }
+            nav img{
+                width: 80px;
+                border-radius: 50%;
+            }
+            .nav-links{
+                flex: 1;
+                text-align: right;
+            }
+            .nav-links ul li{
+                list-style: none;
+                display: inline-block;
+                padding: 8px 12px;
+                position: relative;
+            }
+            .nav-links ul li a{
+                color:#fff;
+                text-decoration: none;
+                font-size: 15px;
+            }
+            .nav-links ul li a ::after{
+                content: '';
+                height:2px;
+                background: #f44336;
+                display: block;
+                margin: auto;
+                transition: width 0.5s ease;
+            }
+            .nav-links ul li a :hover::after{
+                width: 100%;
+            }
+            .text-box{
+                background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/about.webp);
+                min-height: 100vh;
+
+
+            }
+            .text-box p{
+                color: white;
+                font-size: 40px;
+                text-align: center;
+                margin: 10px 0 40px;
+                width: 90%;
+                position: absolute;
+                top:75%;
+                left:50%;
+                transform: translate(-50%,-50%);
+            }
+            .text-about{
+                text-align: center;
+            }
+
+            
+
+            /*---------------- links -----------------------------*/
+            .foot{
+                margin-top: 150px;
+                width: 100%;
+                padding:100px 15% ;
+                background:black;
+                color: #efefef;
+                display: flex;
+                justify-content: space-between;
+            
+            }
+
+            .foot div{
+                text-align: center;
+
+            }
+            .foot-col-2{
+                flex-grow: 2;
+                margin-right: 60px;
+            }
+            .foot div h3{
+                font-weight: 300;
+                margin-bottom: 30px;
+                letter-spacing: 1px;
+            }
+            .foot-col-1 a{
+                display: block;
+                text-decoration: none;
+                color: #efefef;
+                margin-bottom:10px ;
+            }
+            .foot-col-3{
+                margin-left:120px;
+            }
+            form input{
+                width: 400px;
+                height: 45px;
+                border-radius: 4px;
+                text-align: center;
+                margin-top: 20px;
+                margin-bottom: 40px;
+                outline: none;
+                border: none;
+                
+            }
+            button[type="submit"] {
+                padding: 12px 24px;
+                background-color:#222831;
+                color:white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+            button[type="submit"]:hover {
+                background-color: #419197;
+            }
+
+
+            .social-icons{
+                 margin-top: 30px;
+
+            }
+            .social-icons i {
+                font-size: 22px;
+                margin: 10px;
+                cursor: pointer;
+            }
+            .foot div:not(:last-child){
+                margin-right: 50px;
+            }
+            
+
+            
+            /*------------- footer -------------*/
+
+            footer{
+                min-height: 10vh;
+                
+            }
+            footer p{
+                margin: 0.4em;
+                font-size: 14px;
+                color: black;
+                text-align: center;
+                padding: 35px;
+            }
+            hr{
+                border: 0;
+                height: 1px;
+                background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+
+            }
+
+            .accent{
+                font-weight: bold;
+            }
+            .footer-link {
+                color: white; 
+                text-decoration: none; /* Remove underline */
+                font-weight: bold; /* Add emphasis */
+            }
+            
+
+        </style>
+
+        
+    </head>
+    <body>
+        <!---------------------------- Header --------------------------------->
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/gervais.png" alt="logoKank"><p id="below-logo">Fondation Gervais</p></a>
+            
+            <div class="nav-links">
+                <ul>
+                    <li><a href="about.html">A Propos</a></li>
+                    <li><a href="career.html">Carrières</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                </ul>
+            </div>
+            </nav>
+            <div class="text-box">
+                <p>Un engagement incessant pour mettre fin à la pauvreté.</p>
+            </div>
+            <div class="text-about">
+                <h1 class="text-3xl">A propos de Nous</h1>
+                <div class="vision">
+                    <p>Nous pensons que chacun devrait avoir la possibilité de mettre à profit sa sagesse,
+                     son talent et ses efforts pour déterminer son propre destin.
+                     Nous nous efforçons de mettre fin à la pauvreté grâce à des solutions durables et évolutives
+                      qui s'appuient sur les idées et les besoins des personnes dans les communautés où elles vivent et travaillent.</p>
+                </div>
+            </div>
+           
+            
+        
+        </section>
+
+
+         <!-----------------------   links ------------------------------>
+         <section class="foot">
+            <div class="foot-col-1">
+                <h3>Liens Rapides</h3>
+                <a href="">A Propos</a>
+                <a href="">Carrières</a>
+                <a href="">Services</a>
+                <a href="contact.html">Contacts</a>
+                
+            </div>
+            <div class="foot-col-2">
+                <h3>BULLETIN</h3>
+                <form>
+                  <input type="email" placeholder="Your Email Address" required>
+                  <button type="submit">SUBSCRIBE</button>
+                </form>
+
+            </div>
+            <div class="foot-col-3">
+                <h3>CONTACT</h3>
+                <p>41 Kimayala Q. Boma C/ Mont-Ngafula Kinshasa, DRC</p>
+                <div class="social-icons">
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-youtube"></i>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!------------------------------ Footer ------------------------------------->
+    
+
+        <footer>
+             <p>©2024<span class="accent"> Fondation Gervais </span>| Taxpayer ID Number: 13-3240109 | legal disclaimer</p>
+        </footer>
+
+    </body>
+</html>
