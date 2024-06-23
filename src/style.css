@@ -41,7 +41,7 @@
     position: absolute;
     bottom:88%;
     padding-left: 10px;
-    margin-left: 80px;
+   margin-left: 80px;
     
 }
 nav{
@@ -618,8 +618,9 @@ hr{
   font-weight: bold; /* Add emphasis */
 }
 
-/* Optional: Add hover effect */
-.footer-link:hover {
-  color: yellow; /* Change to your desired hover color */
+@media(max-width:769px){
+  footer{
+    width:120%;
+  }
 }
 

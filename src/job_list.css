@@ -1,0 +1,270 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*------------- Header ----------------- */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Poppins', sans-serif;
+
+}
+
+.header{
+      min-height: 20vh;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+  }
+  
+  #below-logo{
+      text-decoration: none;
+      color: white;
+      font-size: 15px;
+      display: inline-block;
+      font-style: bold;
+      position: absolute;
+      bottom:88%;
+      padding-left: 90px;
+
+  }
+  nav{
+      display: flex;
+      padding: 2% 6%;
+      justify-content: space-between;
+      align-items: center;
+      background-color: black;
+      width: 100%;
+  }
+  nav img{
+      width: 80px;
+      border-radius: 50%;
+  }
+  .nav-links{
+      flex: 1;
+      text-align: right;
+  }
+  .nav-links ul li{
+      list-style: none;
+      display: inline-block;
+      padding: 8px 12px;
+      position: relative;
+  }
+  .nav-links ul li a{
+      color:#fff;
+      text-decoration: none;
+      font-size: 15px;
+  }
+  .nav-links ul li a ::after{
+      content: '';
+      height:2px;
+      background: #f44336;
+      display: block;
+      margin: auto;
+      transition: width 0.5s ease;
+  }
+  .nav-links ul li a :hover::after{
+      width: 100%;
+  }
+  /* Hamburger menu styles */
+  .nav-toggle {
+      display: none;
+  }
+  .nav-toggle-label {
+      display: none;
+      cursor: pointer;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      width: 30px;
+      height: 30px;
+      flex-direction: column;
+      justify-content: space-around;
+  }
+
+  .nav-toggle-label span {
+      display: block;
+      background: #fff;
+      height: 3px;
+      width: 100%;
+      border-radius: 2px;
+      transition: all 0.3s;
+  }
+
+  /* Show the hamburger menu on small screens */
+  @media (max-width: 768px) {
+      .nav-links {
+          display: none;
+          width: 100%;
+          text-align: center;
+      }
+
+      .nav-links ul {
+          flex-direction: column;
+      }
+
+      .nav-links ul li {
+          display: block;
+          padding: 10px 0;
+      }
+
+      .nav-toggle-label {
+          display: flex;
+      }
+
+      .nav-toggle:checked + .nav-toggle-label + .nav-links {
+          display: block;
+      }
+      nav {
+          flex-direction: column;
+          align-items: flex-start;
+      }
+
+      .logo {
+          margin-bottom: 10px;
+      }
+
+      .nav-toggle-label {
+          position: static;
+          align-self: flex-end;
+      }
+      
+  }
+  
+  @media(max-width:1024px){
+    .header{
+      width: 100%;
+    }
+    nav{
+      width: 150%;
+    }
+    .job-part1{
+      margin: 0;
+    }
+  }
+  
+
+
+/*----              job Part One        --------------- */
+
+.job-part1{
+    max-width: 900px;
+    margin-top: 150px;
+    margin-left: 350px;
+}
+/* Responsivness for small screens */
+@media(max-width:769px){
+  .job-part1{
+    min-width: 120%;
+    margin: 0 ;
+    margin-left: 30px;
+    margin-right: 10px;
+  }
+  .job-head h2{
+    font-size: 10px;
+  }
+  .job-head{
+    font-size: 10px;
+    
+  }
+  .job-role{
+    font-size: 12px;
+  }
+  .paragraph{
+    
+  }
+}
+
+/* Responsivness for medium screens */
+@media screen and (min-width:820px) and (max-width:1280px){
+  .header{
+    width: 70%;
+  }
+  .job-part1{
+    max-width: 90%;
+    margin: 0;
+    margin-left: 30px;
+    margin-right: 10px;
+  }
+  
+}
+
+
+.job-head{
+
+}
+.apply-btn{
+  padding-bottom: 20px;
+}
+.job-head h2{
+  font-size: 50px;
+  font-weight:350;
+  line-height: 2.5;
+  padding-bottom: 10px;
+  
+}
+.paragraph{
+  font-weight: 550;
+  font-style: italic;
+  text-transform: uppercase;
+}
+.job-list{
+  margin-left: 45px;
+}
+.job-list li{
+  list-style-type:disc;
+  color: black;
+}
+button[type="submit"] {
+  padding: 12px 24px;
+  background-color:#222831;
+  color:white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button[type="submit"]:hover {
+  background-color: #419197;
+}
+
+/*------------- footer -------------*/
+
+footer{
+  min-height: 10vh;
+  background-color: black;
+  margin-top: 40px;
+  
+}
+footer p{
+  margin: 0.4em;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  padding: 35px;
+}
+hr{
+border: 0;
+height: 1px;
+background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+
+}
+
+.accent{
+  font-weight: bold;
+}
+.footer-link {
+color: white; 
+text-decoration: none; /* Remove underline */
+font-weight: bold; /* Add emphasis */
+}
+@media(max-width:769px){
+  footer{
+    width: 150%;
+  }
+  footer p{
+    font-size: 12px;
+  }
+}
